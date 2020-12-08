@@ -1,4 +1,6 @@
 <?php
+header('Location: index.html');
+exit;
 // Logs the ip address of guests/members of your site.
 
 // add the full path to the log file
@@ -17,7 +19,6 @@ fwrite($fp, "\n");
 fwrite($fp,"-------------"); 
 fwrite($fp, "\n");
 fclose($fp); 
-header('Location: index.html');
-exit;
+
 ?>
 
